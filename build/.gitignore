@@ -1,0 +1,6 @@
+Makefile.local
+bootloader
+*.o
+*.d
+*.hex
+*.map

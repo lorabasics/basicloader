@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.2" width="178.86mm" height="10.47mm" viewBox="2253 16222 17886 1047" preserveAspectRatio="xMidYMid" fill-rule="evenodd" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:ooo="http://xml.openoffice.org/svg/export" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:presentation="http://sun.com/xmlns/staroffice/presentation" xmlns:smil="http://www.w3.org/2001/SMIL20/" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+ <defs class="ClipPathGroup">
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="2253" y="16222" width="17886" height="1047"/>
+  </clipPath>
+  <clipPath id="presentation_clip_path_shrink" clipPathUnits="userSpaceOnUse">
+   <rect x="2270" y="16223" width="17851" height="1045"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <font id="EmbeddedFont_1" horiz-adv-x="2048">
+   <font-face font-family="Whitney Medium embedded" units-per-em="2048" font-weight="normal" font-style="normal" ascent="1958" descent="476"/>
+   <missing-glyph horiz-adv-x="2048" d="M 0,0 L 2047,0 2047,2047 0,2047 0,0 Z"/>
+   <glyph unicode="z" horiz-adv-x="821" d="M 852,0 L 827,152 279,152 827,834 827,977 96,977 121,825 619,825 72,143 72,0 852,0 Z"/>
+   <glyph unicode="w" horiz-adv-x="1377" d="M 1421,977 L 1239,977 1032,254 817,977 664,977 449,254 236,991 57,963 371,-4 522,-4 737,733 954,-4 1108,-4 1421,977 Z"/>
+   <glyph unicode="t" horiz-adv-x="610" d="M 612,-4 L 588,152 C 565,147 537,145 504,145 401,145 369,195 369,274 L 369,823 604,823 580,977 369,977 369,1329 190,1303 190,977 43,977 43,823 190,823 190,242 C 190,45 303,-16 475,-16 539,-16 582,-10 612,-4 Z"/>
+   <glyph unicode="r" horiz-adv-x="557" d="M 690,823 L 662,997 C 502,989 389,889 319,778 L 289,977 143,977 143,0 326,0 326,578 C 391,707 528,815 690,823 Z"/>
+   <glyph unicode="p" horiz-adv-x="901" d="M 829,508 C 829,266 717,141 563,141 459,141 399,158 326,195 L 326,664 C 403,768 489,836 600,836 733,836 829,721 829,508 Z M 1014,516 C 1014,842 840,997 629,997 485,997 385,922 311,836 L 289,977 143,977 143,-381 326,-354 326,31 C 387,6 475,-12 571,-12 809,-12 1014,160 1014,516 Z"/>
+   <glyph unicode="n" horiz-adv-x="822" d="M 940,0 L 940,711 C 940,887 842,997 657,997 518,997 403,920 311,836 L 289,977 143,977 143,0 326,0 326,676 C 414,770 512,834 608,834 715,834 758,766 758,666 L 758,0 940,0 Z"/>
+   <glyph unicode="m" horiz-adv-x="1404" d="M 1530,0 L 1530,711 C 1530,887 1440,997 1253,997 1116,997 997,920 909,836 872,936 795,997 651,997 514,997 403,920 311,836 L 289,977 143,977 143,0 326,0 326,676 C 414,770 506,834 602,834 709,834 745,766 745,666 L 745,0 928,0 928,676 C 1016,770 1108,834 1204,834 1311,834 1348,766 1348,666 L 1348,0 1530,0 Z"/>
+   <glyph unicode="l" horiz-adv-x="213" d="M 340,0 L 340,1479 158,1450 158,0 340,0 Z"/>
+   <glyph unicode="i" horiz-adv-x="239" d="M 365,1288 C 365,1352 313,1405 250,1405 186,1405 133,1352 133,1288 133,1225 186,1174 250,1174 313,1174 365,1225 365,1288 Z M 340,0 L 340,977 158,977 158,0 340,0 Z"/>
+   <glyph unicode="f" horiz-adv-x="584" d="M 606,1296 L 580,1462 C 555,1464 530,1466 502,1466 328,1466 199,1393 199,1198 L 199,977 51,977 51,823 199,823 199,0 377,0 377,823 596,823 573,977 377,977 377,1180 C 377,1270 428,1305 512,1305 549,1305 586,1300 606,1296 Z"/>
+   <glyph unicode="e" horiz-adv-x="875" d="M 516,854 C 657,854 727,764 750,606 L 279,606 C 307,772 403,854 516,854 Z M 932,111 L 905,274 C 799,190 696,135 555,135 385,135 279,242 270,469 L 934,469 934,508 C 934,778 803,997 518,997 272,997 88,805 88,492 88,133 287,-20 541,-20 702,-20 827,29 932,111 Z"/>
+   <glyph unicode="d" horiz-adv-x="901" d="M 272,469 C 272,711 383,836 537,836 641,836 700,819 776,780 L 776,313 C 698,209 612,141 500,141 369,141 272,254 272,469 Z M 88,461 C 88,133 262,-20 473,-20 616,-20 717,53 791,141 L 813,0 958,0 958,1479 776,1450 776,946 C 715,971 627,989 530,989 293,989 88,817 88,461 Z"/>
+   <glyph unicode="c" horiz-adv-x="795" d="M 877,80 L 850,248 C 754,166 657,139 559,139 395,139 272,252 272,489 272,715 385,838 553,838 666,838 756,797 840,729 L 866,907 C 801,954 696,997 555,997 293,997 88,819 88,487 88,162 281,-20 543,-20 682,-20 786,12 877,80 Z"/>
+   <glyph unicode="a" horiz-adv-x="822" d="M 700,268 C 619,184 516,131 410,131 317,131 264,182 264,262 264,363 340,461 700,496 L 700,268 Z M 883,0 L 883,684 C 883,901 768,997 530,997 379,997 268,963 152,915 L 176,758 C 283,805 395,842 514,842 627,842 700,799 700,676 L 700,635 C 293,592 84,496 84,252 84,86 195,-20 371,-20 530,-20 637,51 715,131 L 735,0 883,0 Z"/>
+   <glyph unicode="U" horiz-adv-x="1139" d="M 1255,545 L 1255,1413 1063,1413 1063,553 C 1063,297 942,150 702,150 459,150 348,313 348,559 L 348,1413 156,1413 156,535 C 156,190 360,-27 702,-27 1044,-27 1255,188 1255,545 Z"/>
+   <glyph unicode="N" horiz-adv-x="1112" d="M 1270,0 L 1270,1413 1092,1413 1092,354 342,1413 170,1413 170,0 348,0 348,1100 1124,0 1270,0 Z"/>
+   <glyph unicode="L" horiz-adv-x="742" d="M 899,0 L 872,180 363,180 363,1413 170,1413 170,0 899,0 Z"/>
+   <glyph unicode="B" horiz-adv-x="874" d="M 1030,414 C 1030,600 924,707 766,754 893,807 969,903 969,1047 969,1264 823,1413 512,1413 L 170,1413 170,0 508,0 C 834,0 1030,131 1030,414 Z M 780,1040 C 780,901 680,819 494,819 L 358,819 358,1249 508,1249 C 700,1249 780,1169 780,1040 Z M 842,410 C 842,246 725,164 522,164 L 358,164 358,662 516,662 C 727,662 842,573 842,410 Z"/>
+   <glyph unicode="4" horiz-adv-x="1112" d="M 764,0 L 934,0 934,313 1155,313 1155,465 934,465 934,1389 715,1389 72,449 72,313 764,313 764,0 Z M 764,465 L 268,465 764,1182 764,465 Z"/>
+   <glyph unicode="-" horiz-adv-x="530" d="M 614,494 L 614,672 111,672 111,494 614,494 Z"/>
+   <glyph unicode=")" horiz-adv-x="636" d="M 57,1440 C 350,1176 475,932 475,649 475,358 365,145 123,-29 L 152,-201 C 485,10 670,285 670,645 670,991 520,1229 233,1479 L 57,1440 Z"/>
+   <glyph unicode="(" horiz-adv-x="636" d="M 743,-154 C 451,111 326,354 326,637 326,928 436,1141 678,1315 L 649,1487 C 315,1276 131,1001 131,641 131,295 281,57 567,-193 L 743,-154 Z"/>
+   <glyph unicode=" " horiz-adv-x="450"/>
+  </font>
+ </defs>
+ <defs class="TextShapeIndex">
+  <g ooo:slide="id1" ooo:id-list="id3 id4 id5 id6 id7 id8 id9"/>
+ </defs>
+ <defs class="EmbeddedBulletChars">
+  <g id="bullet-char-template-57356" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 580,1141 L 1163,571 580,0 -4,571 580,1141 Z"/>
+  </g>
+  <g id="bullet-char-template-57354" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 8,1128 L 1137,1128 1137,0 8,0 8,1128 Z"/>
+  </g>
+  <g id="bullet-char-template-10146" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 174,0 L 602,739 174,1481 1456,739 174,0 Z M 1358,739 L 309,1346 659,739 1358,739 Z"/>
+  </g>
+  <g id="bullet-char-template-10132" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 2015,739 L 1276,0 717,0 1260,543 174,543 174,936 1260,936 717,1481 1274,1481 2015,739 Z"/>
+  </g>
+  <g id="bullet-char-template-10007" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 0,-2 C -7,14 -16,27 -25,37 L 356,567 C 262,823 215,952 215,954 215,979 228,992 255,992 264,992 276,990 289,987 310,991 331,999 354,1012 L 381,999 492,748 772,1049 836,1024 860,1049 C 881,1039 901,1025 922,1006 886,937 835,863 770,784 769,783 710,716 594,584 L 774,223 C 774,196 753,168 711,139 L 727,119 C 717,90 699,76 672,76 641,76 570,178 457,381 L 164,-76 C 142,-110 111,-127 72,-127 30,-127 9,-110 8,-76 1,-67 -2,-52 -2,-32 -2,-23 -1,-13 0,-2 Z"/>
+  </g>
+  <g id="bullet-char-template-10004" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 285,-33 C 182,-33 111,30 74,156 52,228 41,333 41,471 41,549 55,616 82,672 116,743 169,778 240,778 293,778 328,747 346,684 L 369,508 C 377,444 397,411 428,410 L 1163,1116 C 1174,1127 1196,1133 1229,1133 1271,1133 1292,1118 1292,1087 L 1292,965 C 1292,929 1282,901 1262,881 L 442,47 C 390,-6 338,-33 285,-33 Z"/>
+  </g>
+  <g id="bullet-char-template-9679" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 813,0 C 632,0 489,54 383,161 276,268 223,411 223,592 223,773 276,916 383,1023 489,1130 632,1184 813,1184 992,1184 1136,1130 1245,1023 1353,916 1407,772 1407,592 1407,412 1353,268 1245,161 1136,54 992,0 813,0 Z"/>
+  </g>
+  <g id="bullet-char-template-8226" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 346,457 C 273,457 209,483 155,535 101,586 74,649 74,723 74,796 101,859 155,911 209,963 273,989 346,989 419,989 480,963 531,910 582,859 608,796 608,723 608,648 583,586 532,535 482,483 420,457 346,457 Z"/>
+  </g>
+  <g id="bullet-char-template-8211" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M -4,459 L 1135,459 1135,606 -4,606 -4,459 Z"/>
+  </g>
+  <g id="bullet-char-template-61548" transform="scale(0.00048828125,-0.00048828125)">
+   <path d="M 173,740 C 173,903 231,1043 346,1159 462,1274 601,1332 765,1332 928,1332 1067,1274 1183,1159 1299,1043 1357,903 1357,740 1357,577 1299,437 1183,322 1067,206 928,148 765,148 601,148 462,206 346,322 231,437 173,577 173,740 Z"/>
+  </g>
+ </defs>
+ <defs class="TextEmbeddedBitmaps"/>
+ <g class="SlideGroup">
+  <g>
+   <g id="container-id1">
+    <g id="id1" class="Slide" clip-path="url(#presentation_clip_path)">
+     <g class="Page">
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id3">
+        <rect class="BoundingBox" stroke="none" fill="none" x="2252" y="16221" width="1378" height="743"/>
+        <defs>
+         <mask id="mask1">
+          <g>
+           <defs>
+            <linearGradient id="gradient1" x1="2976" y1="16293" x2="2976" y2="16963" gradientUnits="userSpaceOnUse">
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+            </linearGradient>
+           </defs>
+           <path style="fill:url(#gradient1)" d="M 2324,16293 L 3629,16293 3629,16963 2324,16963 2324,16293 Z"/>
+          </g>
+         </mask>
+        </defs>
+        <g style="mask:url(#mask1)">
+         <path fill="rgb(128,128,128)" stroke="none" d="M 2976,16945 L 2341,16945 2341,16310 3611,16310 3611,16945 2976,16945 Z"/>
+         <path fill="none" stroke="rgb(128,128,128)" stroke-width="35" stroke-linejoin="round" d="M 2976,16945 L 2341,16945 2341,16310 3611,16310 3611,16945 2976,16945 Z"/>
+         <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="2608" y="16717"><tspan fill="rgb(128,128,128)" stroke="none">BL</tspan></tspan></tspan></text>
+        </g>
+        <path fill="rgb(211,211,211)" stroke="none" d="M 2905,16874 L 2270,16874 2270,16239 3540,16239 3540,16874 2905,16874 Z"/>
+        <path fill="none" stroke="rgb(119,136,153)" stroke-width="35" stroke-linejoin="round" d="M 2905,16874 L 2270,16874 2270,16239 3540,16239 3540,16874 2905,16874 Z"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="2537" y="16646"><tspan fill="rgb(0,0,0)" stroke="none">BL</tspan></tspan></tspan></text>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id4">
+        <rect class="BoundingBox" stroke="none" fill="none" x="3522" y="16221" width="5188" height="743"/>
+        <defs>
+         <mask id="mask2">
+          <g>
+           <defs>
+            <linearGradient id="gradient2" x1="6151" y1="16293" x2="6151" y2="16963" gradientUnits="userSpaceOnUse">
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+            </linearGradient>
+           </defs>
+           <path style="fill:url(#gradient2)" d="M 3594,16293 L 8709,16293 8709,16963 3594,16963 3594,16293 Z"/>
+          </g>
+         </mask>
+        </defs>
+        <g style="mask:url(#mask2)">
+         <path fill="rgb(128,128,128)" stroke="none" d="M 6151,16945 L 3611,16945 3611,16310 8691,16310 8691,16945 6151,16945 Z"/>
+         <path fill="none" stroke="rgb(128,128,128)" stroke-width="35" stroke-linejoin="round" d="M 6151,16945 L 3611,16945 3611,16310 8691,16310 8691,16945 6151,16945 Z"/>
+        </g>
+        <path fill="rgb(0,102,179)" stroke="none" d="M 6080,16874 L 3540,16874 3540,16239 8620,16239 8620,16874 6080,16874 Z"/>
+        <path fill="none" stroke="rgb(119,136,153)" stroke-width="35" stroke-linejoin="round" d="M 6080,16874 L 3540,16874 3540,16239 8620,16239 8620,16874 6080,16874 Z"/>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id5">
+        <rect class="BoundingBox" stroke="none" fill="none" x="8601" y="16221" width="2013" height="743"/>
+        <defs>
+         <mask id="mask3">
+          <g>
+           <defs>
+            <linearGradient id="gradient3" x1="9643" y1="16293" x2="9643" y2="16963" gradientUnits="userSpaceOnUse">
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+            </linearGradient>
+           </defs>
+           <path style="fill:url(#gradient3)" d="M 8673,16293 L 10613,16293 10613,16963 8673,16963 8673,16293 Z"/>
+          </g>
+         </mask>
+        </defs>
+        <g style="mask:url(#mask3)">
+         <path fill="rgb(128,128,128)" stroke="none" d="M 9643,16945 L 8690,16945 8690,16310 10595,16310 10595,16945 9643,16945 Z"/>
+         <path fill="none" stroke="rgb(128,128,128)" stroke-width="35" stroke-linejoin="round" d="M 9643,16945 L 8690,16945 8690,16310 10595,16310 10595,16945 9643,16945 Z"/>
+        </g>
+        <path fill="rgb(255,255,255)" stroke="none" d="M 9572,16874 L 8619,16874 8619,16239 10524,16239 10524,16874 9572,16874 Z"/>
+        <path fill="none" stroke="rgb(119,136,153)" stroke-width="35" stroke-linejoin="round" d="M 9572,16874 L 8619,16874 8619,16239 10524,16239 10524,16874 9572,16874 Z"/>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id6">
+        <rect class="BoundingBox" stroke="none" fill="none" x="10506" y="16221" width="7093" height="743"/>
+        <defs>
+         <mask id="mask4">
+          <g>
+           <defs>
+            <linearGradient id="gradient4" x1="14088" y1="16293" x2="14088" y2="16963" gradientUnits="userSpaceOnUse">
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+            </linearGradient>
+           </defs>
+           <path style="fill:url(#gradient4)" d="M 10578,16293 L 17598,16293 17598,16963 10578,16963 10578,16293 Z"/>
+          </g>
+         </mask>
+        </defs>
+        <g style="mask:url(#mask4)">
+         <path fill="rgb(128,128,128)" stroke="none" d="M 14088,16945 L 10595,16945 10595,16310 17580,16310 17580,16945 14088,16945 Z"/>
+         <path fill="none" stroke="rgb(128,128,128)" stroke-width="35" stroke-linejoin="round" d="M 14088,16945 L 10595,16945 10595,16310 17580,16310 17580,16945 14088,16945 Z"/>
+         <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="10862" y="16717"><tspan fill="rgb(128,128,128)" stroke="none">Update (plain)</tspan></tspan></tspan></text>
+        </g>
+        <path fill="rgb(130,106,175)" stroke="none" d="M 14017,16874 L 10524,16874 10524,16239 17509,16239 17509,16874 14017,16874 Z"/>
+        <path fill="none" stroke="rgb(119,136,153)" stroke-width="35" stroke-linejoin="round" d="M 14017,16874 L 10524,16874 10524,16239 17509,16239 17509,16874 14017,16874 Z"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="10791" y="16646"><tspan fill="rgb(255,255,255)" stroke="none">Update (plain)</tspan></tspan></tspan></text>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id7">
+        <rect class="BoundingBox" stroke="none" fill="none" x="17492" y="16221" width="2648" height="743"/>
+        <defs>
+         <mask id="mask5">
+          <g>
+           <defs>
+            <linearGradient id="gradient5" x1="18851" y1="16293" x2="18851" y2="16963" gradientUnits="userSpaceOnUse">
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+            </linearGradient>
+           </defs>
+           <path style="fill:url(#gradient5)" d="M 17564,16293 L 20139,16293 20139,16963 17564,16963 17564,16293 Z"/>
+          </g>
+         </mask>
+        </defs>
+        <g style="mask:url(#mask5)">
+         <path fill="rgb(128,128,128)" stroke="none" d="M 18851,16945 L 17581,16945 17581,16310 20121,16310 20121,16945 18851,16945 Z"/>
+         <path fill="none" stroke="rgb(128,128,128)" stroke-width="35" stroke-linejoin="round" d="M 18851,16945 L 17581,16945 17581,16310 20121,16310 20121,16945 18851,16945 Z"/>
+         <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="17848" y="16717"><tspan fill="rgb(128,128,128)" stroke="none">Update (lz4-dict)</tspan></tspan></tspan></text>
+        </g>
+        <path fill="rgb(224,239,212)" stroke="none" d="M 18780,16874 L 17510,16874 17510,16239 20050,16239 20050,16874 18780,16874 Z"/>
+        <path fill="none" stroke="rgb(119,136,153)" stroke-width="35" stroke-linejoin="round" d="M 18780,16874 L 17510,16874 17510,16239 20050,16239 20050,16874 18780,16874 Z"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="17777" y="16646"><tspan fill="rgb(178,178,178)" stroke="none">Update (lz4-dict)</tspan></tspan></tspan></text>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.CustomShape">
+       <g id="id8">
+        <rect class="BoundingBox" stroke="none" fill="none" x="3521" y="16221" width="3538" height="744"/>
+        <defs>
+         <mask id="mask6">
+          <g>
+           <defs>
+            <linearGradient id="gradient6" x1="5325" y1="16293" x2="5325" y2="16964" gradientUnits="userSpaceOnUse">
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="0.5" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+             <stop offset="1" style="stop-color:rgb(128,128,128)"/>
+            </linearGradient>
+           </defs>
+           <path style="fill:url(#gradient6)" d="M 3592,16293 L 7058,16293 7058,16964 3592,16964 3592,16293 Z"/>
+          </g>
+         </mask>
+        </defs>
+        <g style="mask:url(#mask6)">
+         <path fill="rgb(128,128,128)" stroke="none" d="M 3610,16310 L 6723,16310 7040,16628 6723,16946 3610,16946 3610,16310 Z M 3610,16310 L 3610,16310 Z M 7040,16946 L 7040,16946 Z"/>
+         <path fill="none" stroke="rgb(128,128,128)" stroke-width="35" stroke-linejoin="round" d="M 3610,16310 L 6723,16310 7040,16628 6723,16946 3610,16946 3610,16310 Z"/>
+         <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="3877" y="16717"><tspan fill="rgb(128,128,128)" stroke="none">New firmware</tspan></tspan></tspan></text>
+        </g>
+        <path fill="rgb(92,45,145)" stroke="none" d="M 3539,16239 L 6652,16239 6969,16557 6652,16875 3539,16875 3539,16239 Z M 3539,16239 L 3539,16239 Z M 6969,16875 L 6969,16875 Z"/>
+        <path fill="none" stroke="rgb(119,136,153)" stroke-width="35" stroke-linejoin="round" d="M 3539,16239 L 6652,16239 6969,16557 6652,16875 3539,16875 3539,16239 Z"/>
+        <text class="TextShape"><tspan class="TextParagraph" font-family="Whitney Medium" font-size="247px" font-weight="400"><tspan class="TextPosition" x="3806" y="16646"><tspan fill="rgb(255,255,255)" stroke="none">New firmware</tspan></tspan></tspan></text>
+       </g>
+      </g>
+      <g class="com.sun.star.drawing.ConnectorShape">
+       <g id="id9">
+        <rect class="BoundingBox" stroke="none" fill="none" x="5190" y="16862" width="8841" height="408"/>
+        <path fill="none" stroke="rgb(47,79,79)" stroke-width="25" stroke-linejoin="round" d="M 14017,16875 L 14017,17256 5254,17256 5254,17057"/>
+        <path fill="rgb(47,79,79)" stroke="none" d="M 5254,16875 L 5191,17066 5318,17066 5254,16875 Z"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
