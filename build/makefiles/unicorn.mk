@@ -7,12 +7,7 @@ VPATH		+= $(SRCDIR)/common/micro-ecc
 SRCS		+= bootloader.c
 
 SRCS		+= update.c
-#SRCS		+= lz4.c
-#SRCS		+= sha2.c
-#SRCS		+= uECC.c
 
-#DEFS		+= LZ4_FLASHWRITE
-#DEFS		+= LZ4_PAGEBUFFER_SZ=64
 DEFS		+= UP_PAGEBUFFER_SZ=64
 
 FLAGS		+= -mcpu=cortex-m0plus
