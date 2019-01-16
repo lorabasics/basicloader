@@ -30,6 +30,11 @@ installed, the LED LD2 will be flashing the corresponding error sequence
 
 ## Release Notes
 
+### Pre-release 2
+15-Jan-2019
+
+- Bootloader for STM32 makes Flash-write function available to firmware
+
 ### Pre-release 1
 07-Jan-2019
 

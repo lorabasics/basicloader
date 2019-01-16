@@ -176,12 +176,11 @@ static wr_fl_hp prep_wr_fl_hp (uint32_t* funcbuf) {
     return THUMB_FUNC(funcbuf);
 }
 
-#if 0
 static void write_flash (uint32_t* dst, uint32_t* src, uint32_t nwords, bool erase) {
     uint32_t funcbuf[WR_FL_HP_WORDS];
     wr_fl_hp wf_func = prep_wr_fl_hp(funcbuf);
 
-    unlock_flash_prog();
+    unlock_flash();
     while (nwords > 0) {
 	if (erase && (((uintptr_t) dst) & 127) == 0) {
 	    // erase page
@@ -210,7 +209,6 @@ static void write_flash (uint32_t* dst, uint32_t* src, uint32_t nwords, bool era
     }
     relock_flash();
 }
-#endif
 
 static void ee_write (uint32_t* dst, uint32_t val) {
     *dst = val;
@@ -343,8 +341,9 @@ void* bootloader (void) {
 // Bootloader information table
 
 __attribute__((section(".boot.boottab"))) const boot_boottab boottab = {
-    .version	= 0x100,
+    .version	= 0x101,
     .update	= set_update,
     .panic	= fw_panic,
     .crc32      = boot_crc32,
+    .wr_flash   = write_flash,
 };
