@@ -58,6 +58,8 @@ typedef union {
     uint32_t w[8];
 } hash32;
 
+_Static_assert(sizeof(hash32) == 32, "sizeof(hash32) must be 32");
+
 
 // Firmware header
 typedef struct {
@@ -67,15 +69,19 @@ typedef struct {
     uint32_t	entrypoint;	// address of entrypoint
 } boot_fwhdr;
 
+_Static_assert(sizeof(boot_fwhdr) == 12, "sizeof(boot_fwhdr) must be 12");
+
 
 // Hardware identifier (EUI-48, native byte order)
 typedef union {
-    struct {
+    struct __attribute__((packed)) {
 	uint32_t a;
 	uint16_t b;
     };
     uint8_t bytes[6];
 } eui48;
+
+_Static_assert(sizeof(eui48) == 6, "sizeof(eui48) must be 6");
 
 static inline uint64_t eui2int (eui48* eui) {
 #if __BYTE_ORDER__ == __ORDER_LITTLE_ENDIAN__
@@ -97,6 +103,8 @@ typedef struct {
     uint8_t	uptype;		// update type
     uint8_t	rfu;		// RFU
 } boot_uphdr;
+
+_Static_assert(sizeof(boot_uphdr) == 24, "sizeof(boot_uphdr) must be 24");
 
 #endif
 #endif

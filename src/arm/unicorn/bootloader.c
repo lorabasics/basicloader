@@ -5,6 +5,7 @@
 
 #include "update.h"
 #include "boottab.h"
+#include "sha2.h"
 
 
 // ------------------------------------------------
@@ -158,11 +159,12 @@ static uint32_t set_update (void* ptr, hash32* hash) {
 // Bootloader information table
 
 static const boot_boottab boottab = {
-    .version	= 0x100,
+    .version	= 0x102,
     .update	= set_update,
     .panic	= fw_panic,
     .crc32      = boot_crc32,
     .svc        = svc,
+    .sha256     = sha256,
 };
 
 // ------------------------------------------------

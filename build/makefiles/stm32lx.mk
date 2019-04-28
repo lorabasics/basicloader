@@ -9,8 +9,8 @@ SRCS		+= util.S
 SRCS		+= startup.S
 
 SRCS		+= update.c
+SRCS		+= sha2.c
 #SRCS		+= lz4.c
-#SRCS		+= sha2.c
 
 
 STM32		:= $(shell echo $(MCU) | sed 's/^STM32\(L[01]\)\([0-9][0-9]\)R\?\([8BZ]\)$$/ok t\/\1 v\/\2 s\/\3/')
@@ -36,6 +36,7 @@ CFLAGS		+= -Wall
 CFLAGS		+= -Os
 CFLAGS		+= -I$(SRCDIR)/arm/CMSIS/Device/ST/STM32$(STM32_T)xx/Include
 
+LDFLAGS		+= -mcpu=cortex-m0plus
 LDFLAGS		+= -T$(SRCDIR)/arm/stm32lx/ld/STM32$(STM32_T)xx$(STM32_S).ld
 LDFLAGS		+= -T$(SRCDIR)/arm/stm32lx/ld/STM32$(STM32_T).ld
 

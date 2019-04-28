@@ -130,3 +130,52 @@ last:
 	}
     }
 }
+
+#ifdef SHA2_TEST
+
+#include <unistd.h>
+
+static int readfully (int fd, unsigned char* buf, size_t bufsz) {
+    while( bufsz ) {
+        ssize_t n = read(fd, buf, bufsz);
+        if( n <= 0 ) {
+            return -1;
+        }
+        buf += n;
+        bufsz -= n;
+    }
+    return 0;
+}
+
+static int writefully (int fd, unsigned char* buf, size_t bufsz) {
+    while( bufsz ) {
+        ssize_t n = write(fd, buf, bufsz);
+        if( n <= 0 ) {
+            return -1;
+        }
+        buf += n;
+        bufsz -= n;
+    }
+    return 0;
+}
+
+int main (void) {
+    unsigned char buf[128*1024];
+    union {
+        uint8_t bytes[32];
+        uint32_t words[8];
+    } hash;
+    while( 1 ) {
+        uint32_t sz;
+        if( readfully(STDIN_FILENO, (unsigned char*) &sz, sizeof(uint32_t)) < 0
+                || sz > sizeof(buf)
+                || readfully(STDIN_FILENO, buf, sz) < 0 ) {
+            break;
+        }
+        sha256(hash.words, buf, sz);
+        writefully(STDOUT_FILENO, hash.bytes, 32);
+    }
+    return 0;
+}
+
+#endif

@@ -12,13 +12,20 @@
 
 typedef struct {
     uint32_t version;                                   // version of boot loader (values below 256 are reserved for legacy bootloaders)
+
     __attribute__((noreturn))
         void (*panic) (uint32_t reason, uint32_t addr); // bootloader panic function
+
     uint32_t (*update) (void* ptr, hash32* hash);       // function to set firmware update pointer
 
     uint32_t (*crc32) (void* buf, uint32_t nwords);     // calculate CRC32
+
     void (*wr_flash) (uint32_t* dst, uint32_t* src,     // write flash
             uint32_t nwords, bool erase);
+
+    void (*sha256) (uint32_t* hash,                     // SHA-256
+            const uint8_t* msg, uint32_t len);
+
 } boot_boottab;
 
 #endif

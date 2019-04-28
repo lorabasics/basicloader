@@ -7,6 +7,7 @@ VPATH		+= $(SRCDIR)/common/micro-ecc
 SRCS		+= bootloader.c
 
 SRCS		+= update.c
+SRCS		+= sha2.c
 
 DEFS		+= UP_PAGEBUFFER_SZ=64
 
@@ -16,6 +17,7 @@ FLAGS		+= -I$(SRCDIR)/common
 CFLAGS		+= -Wall
 CFLAGS		+= -Os
 
+LDFLAGS		+= -mcpu=cortex-m0plus
 LDFLAGS		+= -T$(SRCDIR)/arm/unicorn/ld/mem.ld
 LDFLAGS		+= -T$(SRCDIR)/arm/unicorn/ld/bootloader.ld
 

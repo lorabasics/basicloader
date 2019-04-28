@@ -12,23 +12,35 @@ The reference hardware platform for Basic Loader is the B-L072Z-LRWAN1 STM32
 LoRa™ Discovery kit.
 
 ### Prerequisites
-It is recommended to use a recent Ubuntu distribution as build host. We use
-`gcc-arm-embedded` from this PPA:
-<https://launchpad.net/~team-gcc-arm-embedded/+archive/ubuntu/ppa>
+It is recommended to use a recent Ubuntu distribution as build host with the
+`gcc-arm-embedded` package installed.
 
-To build, change into the target board's build directory and type make:
+To build the bootloaders for all supported platforms, simply run `make` in
+the toplevel directory.
+
+Alternatively, change into a specific target board's build directory and run
+`make` there:
 
 ```
 cd build/boards/B-L072Z-LRWAN1
 make
 ```
 
-The output of the build process is a file called `bootloader.hex` that can be
+The output of the build process is a file named `bootloader.hex` that can be
 loaded onto the B-L072Z-LRWAN1 development board. If there is no valid firmware
 installed, the LED LD2 will be flashing the corresponding error sequence
 (SYNC-2-2-1).
 
 ## Release Notes
+
+### Release 3
+01-May-2019
+
+- Bootloader for STM32 makes SHA-256 function available to firmware
+- New ZFW-tool creates firmware archives with metadata
+- Changed linker scripts to work around a recent [regression in GNU
+  ld](https://sourceware.org/bugzilla/show_bug.cgi?id=24289)
+- Bugfixes
 
 ### Pre-release 2
 15-Jan-2019

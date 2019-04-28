@@ -26,6 +26,8 @@ static uint32_t update_plain (void* ctx, boot_uphdr* fwup, bool install) {
     if ((n & 3) != 0) {
 	return BOOT_E_SIZE;
     }
+    n >>= 2;
+
     // perform size check and get install address
     if ((rv = up_install_init(ctx, n, (void**) &dst)) != BOOT_OK) {
 	return rv;

@@ -6,6 +6,7 @@
 #include "bootloader_impl.h"
 #include "update.h"
 #include "bootloader_hw.h"
+#include "sha2.h"
 
 
 // ------------------------------------------------
@@ -273,7 +274,10 @@ static uint32_t set_update (void* ptr, hash32* hash) {
     if (ptr == NULL) {
 	rv = BOOT_OK;
     } else {
-	rv = update(NULL, ptr, false);
+        up_ctx uc = {
+            .fwup = ptr,
+        };
+	rv = update(&uc, ptr, false);
     }
     if (rv == BOOT_OK) {
 	boot_config* cfg = (boot_config*) BOOT_CONFIG_BASE;
@@ -341,9 +345,10 @@ void* bootloader (void) {
 // Bootloader information table
 
 __attribute__((section(".boot.boottab"))) const boot_boottab boottab = {
-    .version	= 0x101,
+    .version	= 0x102,
     .update	= set_update,
     .panic	= fw_panic,
     .crc32      = boot_crc32,
     .wr_flash   = write_flash,
+    .sha256     = sha256,
 };
