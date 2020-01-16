@@ -14,6 +14,7 @@
 #define FLASH_SZ()		(*((uint16_t*) 0x1FF8007C) << 10)	// flash size register (L0x1 RM0377 28.1.1; L0x2 RM0376 33.1.1)
 #define FLASH_PAGE_SZ		128
 #define ROUND_PAGE_SZ(sz)       (((sz) + (FLASH_PAGE_SZ - 1)) & ~(FLASH_PAGE_SZ - 1))
+#define ISMULT_PAGE_SZ(sz)      (((sz) & (FLASH_PAGE_SZ - 1)) == 0)
 
 #define GPIO_RCC_ENR	RCC->IOPENR
 #define GPIO_RCC_ENB(p)	(((p) == 0) ? RCC_IOPENR_GPIOAEN \
@@ -57,5 +58,6 @@
 } while (0)
 
 #define GPIO_ENABLE(p)	do { GPIO_RCC_ENR |= GPIO_RCC_ENB(p); } while (0)
+#define GPIO_DISABLE(p)	do { GPIO_RCC_ENR &= ~GPIO_RCC_ENB(p); } while (0)
 
 #endif

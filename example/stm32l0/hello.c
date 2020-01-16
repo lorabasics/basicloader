@@ -5,6 +5,7 @@
 
 #include "stm32l072xx.h"
 #include "bootloader.h"
+#include "boottab.h"
 
 void _start (boot_boottab* boottab); // forward declaration
 

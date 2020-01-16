@@ -16,7 +16,7 @@
     .section .boot.delay,"ax",%progbits
     .thumb_func
 delay:
-	lsls r0, r0, #18
+	lsls r0, r0, #16
      1: subs r0, #1
 	bne 1b
 	bx lr
@@ -26,7 +26,7 @@ delay:
 
 
     // --------------------------------------------
-    // void wr_fl_hp (uint32_t* dst, uint32_t* src)
+    // void wr_fl_hp (uint32_t* dst, const uint32_t* src)
     // write flash half-page (DO NOT CALL DIRECTLY!)
     // r0: dst*, r1: src*, r2-r5: scratch
     .section .boot.wr_fl_hp,"ax",%progbits

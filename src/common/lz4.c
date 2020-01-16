@@ -8,6 +8,7 @@
 
 #include <string.h>
 #include "lz4.h"
+#include "update.h"
 
 
 // ------------------------------------------------
@@ -20,21 +21,13 @@
 #endif
 #endif
 
-#ifdef LZ4_FLASHWRITE
-#ifndef LZ4_PAGEBUFFER_SZ
-#error "LZ4_FLASHWRITE requires LZ4_PAGEBUFFER_SZ"
-#endif
-#endif
-
 typedef struct {
     unsigned char* dst;
     int dstlen;
     unsigned char* dictend;
 #ifdef LZ4_PAGEBUFFER_SZ
     uint32_t pagebuf[LZ4_PAGEBUFFER_SZ / 4];
-#ifdef LZ4_FLASHWRITE
-    lz4_flash_wr_page flash_wr_page;
-#endif
+    void* ctx;
 #endif
 } lz4state;
 
@@ -54,11 +47,7 @@ static void putbyte (lz4state* z, int b) {
     // flush page when last byte is set
     if (pageoff == (LZ4_PAGEBUFFER_SZ - 1)) {
 	// z->dst+z->dstlen still points to current page!
-#ifdef LZ4_FLASHWRITE
-	z->flash_wr_page((uint32_t*) (z->dst + (z->dstlen & ~(LZ4_PAGEBUFFER_SZ - 1))), z->pagebuf);
-#else
-	memcpy(z->dst + (z->dstlen & ~(LZ4_PAGEBUFFER_SZ - 1)), z->pagebuf, LZ4_PAGEBUFFER_SZ);
-#endif
+	up_flash_wr_page(z->ctx, (z->dst + (z->dstlen & ~(LZ4_PAGEBUFFER_SZ - 1))), z->pagebuf);
     }
 #else
     z->dst[z->dstlen] = (b < 0) ? ((z->dstlen + b < 0) ? z->dictend[z->dstlen + b] : z->dst[z->dstlen + b]) : (unsigned char) b;
@@ -70,12 +59,7 @@ static void putbyte (lz4state* z, int b) {
 // depending on configuration the uncompressed data is written directly or
 // buffered to ram, or buffered to flash
 // if buffering is used, the last page will be padded with FF
-int lz4_decompress (
-#ifdef LZ4_FLASHWRITE
-	lz4_flash_wr_page flash_wr_page,
-#endif
-	unsigned char* src, int srclen, unsigned char* dst, unsigned char* dict, int dictlen) {
-
+int lz4_decompress (void* ctx, unsigned char* src, int srclen, unsigned char* dst, unsigned char* dict, int dictlen) {
     unsigned char* srcend = src + srclen;
     lz4state z;
 
@@ -83,8 +67,8 @@ int lz4_decompress (
     z.dst = dst;
     z.dstlen = 0;
     z.dictend = dict + dictlen;
-#ifdef LZ4_FLASHWRITE
-    z.flash_wr_page = flash_wr_page;
+#ifdef LZ4_PAGEBUFFER_SZ
+    z.ctx = ctx;
 #endif
 
     // decode sequences

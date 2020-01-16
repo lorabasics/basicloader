@@ -68,6 +68,8 @@ update can be invalidated.
 
 ### LZ4 Delta Updates (`lz4-dict`)
 
+:wastebasket: *Deprecated*
+
 LZ4 delta updates make use of _dictionary mode_, whereby data can be
 preloaded into the backreferences space. For delta updates, the
 previous firmware image is used as the dictionary. This can dramatically
@@ -105,8 +107,6 @@ be transmitted very efficiently over-the-air, the two-step decompression
 method uses much more Flash memory than any of the other methods.
 
 ### LZ4 In-Place Delta Updates (`lz4-dict-inplace`)
-
-:construction: *Coming soon...*
 
 By carefully coding the update and making use of a temporary scratch
 buffer, the delta update can be extracted directly to its final location

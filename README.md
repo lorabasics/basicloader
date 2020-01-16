@@ -33,6 +33,16 @@ installed, the LED LD2 will be flashing the corresponding error sequence
 
 ## Release Notes
 
+### Release 4
+16-Jan-2020
+
+- Support for LZ4 in-place delta updates
+- Bugfix: Flash writing routines
+- Improved readability of LED blink sequence
+- Option to blink LED during update process
+- Improved out-of-tree build support
+- Improved ZFW (firmware patching) tool
+
 ### Release 3
 01-May-2019
 

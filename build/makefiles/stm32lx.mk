@@ -10,7 +10,7 @@ SRCS		+= startup.S
 
 SRCS		+= update.c
 SRCS		+= sha2.c
-#SRCS		+= lz4.c
+SRCS		+= lz4.c
 
 
 STM32		:= $(shell echo $(MCU) | sed 's/^STM32\(L[01]\)\([0-9][0-9]\)R\?\([8BZ]\)$$/ok t\/\1 v\/\2 s\/\3/')
@@ -25,9 +25,8 @@ STM32_S		:= $(notdir $(filter s/%,$(STM32)))
 DEFS		+= STM32$(STM32_T)
 DEFS		+= STM32$(STM32_T)$(STM32_V)xx
 
-#DEFS		+= LZ4_FLASHWRITE
-#DEFS		+= LZ4_PAGEBUFFER_SZ=64
-DEFS		+= UP_PAGEBUFFER_SZ=64
+DEFS		+= LZ4_PAGEBUFFER_SZ=128
+DEFS		+= UP_PAGEBUFFER_SZ=128
 
 FLAGS		+= -mcpu=cortex-m0plus
 FLAGS		+= -I$(SRCDIR)/common

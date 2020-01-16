@@ -8,8 +8,9 @@ SRCS		+= bootloader.c
 
 SRCS		+= update.c
 SRCS		+= sha2.c
+SRCS		+= lz4.c
 
-DEFS		+= UP_PAGEBUFFER_SZ=64
+DEFS		+= UP_PAGEBUFFER_SZ=128
 
 FLAGS		+= -mcpu=cortex-m0plus
 FLAGS		+= -I$(SRCDIR)/common

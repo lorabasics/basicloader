@@ -6,16 +6,6 @@
 #ifndef _lz4_h_
 #define _lz4_h_
 
-
-#ifdef LZ4_FLASHWRITE
-#include <stdint.h>
-typedef void (*lz4_flash_wr_page) (uint32_t* dst, uint32_t* src);
-#endif
-
-int lz4_decompress (
-#ifdef LZ4_FLASHWRITE
-	lz4_flash_wr_page flash_wr_page,
-#endif
-	unsigned char* src, int srclen, unsigned char* dst, unsigned char* dict, int dictlen);
+int lz4_decompress (void* ctx, unsigned char* src, int srclen, unsigned char* dst, unsigned char* dict, int dictlen);
 
 #endif

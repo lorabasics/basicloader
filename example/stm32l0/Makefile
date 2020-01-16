@@ -16,11 +16,16 @@ LDFLAGS	+= -nostdlib
 LDFLAGS	+= -T../../src/arm/stm32lx/ld/STM32L0xxB.ld
 LDFLAGS	+= -Tfw.ld
 
-FWTOOL	:= python ../../tools/fwtool/fwtool.py
+ZFWTOOL	:= ../../tools/fwtool/zfwtool.py
 
-hello.hex: hello
+hello.hex: hello.zfw
+	$(ZFWTOOL) export $< $@
+
+hello.zfw: hello.unpatched.hex
+	$(ZFWTOOL) create --patch $< $@
+
+hello.unpatched.hex: hello
 	arm-none-eabi-objcopy -O ihex $< $@
-	$(FWTOOL) patch $@
 
 hello: hello.o
 

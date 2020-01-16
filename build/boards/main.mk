@@ -1,4 +1,4 @@
-TOPDIR	:= ../../..
+TOPDIR	?= ../../..
 MKDIR	:= $(TOPDIR)/build/makefiles
 SRCDIR	:= $(TOPDIR)/src
 

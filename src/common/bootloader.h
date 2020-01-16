@@ -24,12 +24,13 @@
 #define BOOT_PANIC_REASON_FWRETURN	0	// firmware returned unexpectedly
 #define BOOT_PANIC_REASON_CRC		1	// firmware CRC verification failed
 #define BOOT_PANIC_REASON_FLASH		2	// error writing flash
+#define BOOT_PANIC_REASON_UPDATE	3	// error updating firmware
 
 
 // Update type codes
 #define BOOT_UPTYPE_PLAIN		0	// plain update
-#define BOOT_UPTYPE_LZ4			1	// lz4-compressed update
-#define BOOT_UPTYPE_LZ4DICT		2	// lz4-compressed delta update
+#define BOOT_UPTYPE_LZ4			1	// lz4-compressed self-contained update
+#define BOOT_UPTYPE_LZ4DELTA		2	// lz4-compressed block-delta update
 
 
 // Magic numbers
@@ -105,6 +106,27 @@ typedef struct {
 } boot_uphdr;
 
 _Static_assert(sizeof(boot_uphdr) == 24, "sizeof(boot_uphdr) must be 24");
+
+// Update delta header
+typedef struct {
+    uint32_t	refcrc;		// referenced firmware CRC
+    uint32_t	refsize;	// referenced firmware size
+    uint32_t    blksize;        // block size (multiple of flash page size, e.g. 4096)
+} boot_updeltahdr;
+
+_Static_assert(sizeof(boot_updeltahdr) == 12, "sizeof(boot_updeltahdr) must be 12");
+
+// Update delta block
+typedef struct __attribute__((packed)) {
+    uint32_t    hash[2];        // block hash (sha256[0-7])
+    uint8_t     blkidx;         // block number
+    uint8_t     dictidx;        // dictionary block number
+    uint16_t    dictlen;        // length of dictionary data (in bytes)
+    uint16_t    lz4len;         // length of lz4-compressed block data (in bytes, up to block size)
+    uint8_t     lz4data[];      // lz4-compressed block data
+} boot_updeltablk;
+
+_Static_assert(sizeof(boot_updeltablk) == 14, "sizeof(boot_updeltablk) must be 14");
 
 #endif
 #endif
