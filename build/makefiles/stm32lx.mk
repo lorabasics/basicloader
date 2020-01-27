@@ -12,8 +12,7 @@ SRCS		+= update.c
 SRCS		+= sha2.c
 SRCS		+= lz4.c
 
-
-STM32		:= $(shell echo $(MCU) | sed 's/^STM32\(L[01]\)\([0-9][0-9]\)R\?\([8BZ]\)$$/ok t\/\1 v\/\2 s\/\3/')
+STM32		:= $(shell echo $(MCU) | sed -E 's/^STM32(L[01])([0-9][0-9])R?([8BZ])$$/ok t\/\1 v\/\2 s\/\3/')
 ifneq (ok,$(firstword $(STM32)))
     $(error Could not parse MCU: $(MCU))
 endif
